@@ -1,104 +1,108 @@
 module DistillationMod
 {
-    imports
-    {
-        Base
-    }
+ imports
+ {
+ Base
+ }
 
-    /* ================================================
-       MARMITE DE DISTILLATION - VIDE
-       ================================================ */
-    
-    item MarmiteDistillation
-    {
-        DisplayCategory = Cooking,
-        Weight = 1.2,
-        Type = Normal,
-        DisplayName = MarmiteDistillation,
-        Icon = Pot,
-        
-        ReplaceOnUseOn = WaterSource-DistillationMod.MarmiteDistillationFull,
-        CanStoreWater = TRUE,
-        
-        Tooltip = Tooltip_MarmiteDistillation,
-    }
+ /* ================================================
+ MARMITE DE DISTILLATION - VIDE
+ Conteneur réutilisable pour la distillation
+ ================================================ */
+ 
+ item MarmiteDistillation
+ {
+ DisplayCategory = Cooking,
+ Weight = 1.2,
+ Type = Normal,
+ DisplayName = MarmiteDistillation,
+ Icon = Pot,
+ 
+ ReplaceOnUseOn = WaterSource-DistillationMod.MarmiteDistillationFull,
+ CanStoreWater = TRUE,
+ 
+ Tooltip = Tooltip_MarmiteDistillation,
+ }
 
-    /* ================================================
-       MARMITE DE DISTILLATION - PLEINE D'EAU
-       ================================================ */
-    
-    item MarmiteDistillationFull
-    {
-        DisplayCategory = Cooking,
-        Weight = 3.7,
-        Type = Drainable,
-        DisplayName = MarmiteDistillationFull,
-        Icon = Pot,
-        
-        UseDelta = 0.04,
-        UseWhileEquipped = FALSE,
-        ReplaceOnDeplete = DistillationMod.MarmiteDistillation,
-        ReplaceOnUseOn = WaterSource-DistillationMod.MarmiteDistillationFull,
-        
-        IsWaterSource = TRUE,
-        CanStoreWater = TRUE,
-        
-        FillFromDispenserSound = GetWaterFromDispenserMetal,
-        FillFromTapSound = GetWaterFromTapMetal,
-        FillFromToiletSound = GetWaterFromToilet,
-        FillFromLakeSound = GetWaterFromLakeMetal,
-        
-        EatType = Pot,
-        RainFactor = 0.3,
+ /* ================================================
+ MARMITE DE DISTILLATION - PLEINE D'EAU
+ Prête pour la préparation
+ ================================================ */
+ 
+ item MarmiteDistillationFull
+ {
+ DisplayCategory = Cooking,
+ Weight = 3.7,
+ Type = Drainable,
+ DisplayName = MarmiteDistillationFull,
+ Icon = Pot,
+ 
+ UseDelta = 0.04,
+ UseWhileEquipped = FALSE,
+ ReplaceOnDeplete = DistillationMod.MarmiteDistillation,
+ ReplaceOnUseOn = WaterSource-DistillationMod.MarmiteDistillationFull,
+ 
+ IsWaterSource = TRUE,
+ CanStoreWater = TRUE,
+ 
+ FillFromDispenserSound = GetWaterFromDispenserMetal,
+ FillFromTapSound = GetWaterFromTapMetal,
+ FillFromToiletSound = GetWaterFromToilet,
+ FillFromLakeSound = GetWaterFromLakeMetal,
+ 
+ EatType = Pot,
+ RainFactor = 0.3,
+ 
+ Tooltip = Tooltip_MarmiteDistillationFull,
+ }
 
-        Tooltip = Tooltip_MarmiteDistillationFull,
-    }
+ /* ================================================
+ PROCESS : Marmite préparée (avant cuisson)
+ Nécessite 2h de cuisson dans un poêle
+ ================================================ */
+ 
+ item PotDistillation
+ {
+ DisplayCategory = Cooking,
+ Weight = 2.0,
+ Type = Food,
+ DisplayName = PotDistillation,
+ Icon = Pot,
+ 
+ IsCookable = TRUE,
+ MinutesToCook = 120,
+ MinutesToBurn = 180,
+ 
+ CookedString = Distillee,
+ ReplaceOnCooked = DistillationMod.PotDistillationCooked,
+ 
+ DaysFresh = 0,
+ DaysTotallyRotten = 0,
+ Packaged = TRUE,
+ Tooltip = Tooltip_PotDistillation,
+ }
 
-    /* ================================================
-       PROCESS : Marmite préparée (avant cuisson)
-       ================================================ */
-    
-    item PotDistillation
-    {
-        DisplayCategory = Cooking,
-        Weight = 2.0,
-        Type = Food,
-        DisplayName = PotDistillation,
-        Icon = Pot,
-        
-        IsCookable = TRUE,
-        MinutesToCook = 120,
-        MinutesToBurn = 180,
-        
-        CookedString = Distillée,
-        ReplaceOnCooked = DistillationMod.PotDistillationCooked,
-        
-        DaysFresh = 0,
-        DaysTotallyRotten = 0,
-        Packaged = TRUE,
-        Tooltip = Tooltip_PotDistillation,
-    }
+ /* ================================================
+ ESSENCE BRUTE - Source transférable (30 unités)
+ Utilisable directement ou à conditionner
+ ================================================ */
+ 
+ item PotDistillationCooked
+ {
+ DisplayCategory = Cooking,
+ Weight = 2.5,
+ Type = Drainable,
+ DisplayName = PotDistillationCooked,
+ Icon = Pot,
+ 
+ UseDelta = 0.033333333,
+ UseWhileEquipped = FALSE,
+ ReplaceOnDeplete = DistillationMod.MarmiteDistillation,
+ CanStoreWater = FALSE,
+ 
+ Tags = Petrol,
 
-    /* ================================================
-       ESSENCE BRUTE - Source transférable (30 unités)
-       ================================================ */
-    
-    item PotDistillationCooked
-    {
-        DisplayCategory = Cooking,
-        Weight = 2.5,
-        Type = Drainable,
-        DisplayName = PotDistillationCooked,
-        Icon = Pot,
-
-        UseDelta = 0.033333333,
-        UseWhileEquipped = FALSE,
-        ReplaceOnDeplete = DistillationMod.MarmiteDistillation,
-        CanStoreWater = FALSE,
-        
-        Tags = Petrol,
-        
-        Packaged = TRUE,
-        Tooltip = Tooltip_PotDistillationCooked,
-    }
+ Packaged = TRUE,
+ Tooltip = Tooltip_PotDistillationCooked,
+ }
 }

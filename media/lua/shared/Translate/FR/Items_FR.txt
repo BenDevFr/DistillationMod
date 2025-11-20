@@ -1,7 +1,10 @@
-﻿Items_FR = {
-    -- Items seulement
-    MarmiteDistillation = "Marmite de Distillation",
-    MarmiteDistillationFull = "Marmite de Distillation (Pleine)",
-    PotDistillation = "Marmite Préparée",
-    PotDistillationCooked = "Essence Brute",
+Items_FR = {
+ -- Items
+ MarmiteDistillation = "Marmite de Distillation",
+ MarmiteDistillationFull = "Marmite de Distillation (Pleine)",
+ PotDistillation = "Marmite Preparée",
+ PotDistillationCooked = "Essence Brute",
+
+ -- Cuisson
+ Distillee = "Distillée",
 }

@@ -1,0 +1,6 @@
+ContextMenu_EN = {
+ -- Context Menu
+ ContextMenu_RemplirEssence = "Fill with fuel",
+ ContextMenu_TousConteneurs = "All containers (%1)",
+ ContextMenu_Remplir = "Fill",
+}

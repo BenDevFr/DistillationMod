@@ -1,0 +1,6 @@
+ContextMenu_FR = {
+ -- Menu Contextuel
+ ContextMenu_RemplirEssence = "Remplir avec essence",
+ ContextMenu_TousConteneurs = "Tous les conteneurs (%1)",
+ ContextMenu_Remplir = "Remplir",
+}

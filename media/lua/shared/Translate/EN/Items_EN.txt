@@ -1,7 +1,10 @@
 Items_EN = {
-    -- Items
-    MarmiteDistillation = "Distillation Pot",
-    MarmiteDistillationFull = "Distillation Pot (Full)",
-    PotDistillation = "Prepared Pot",
-    PotDistillationCooked = "Raw Fuel",
+ -- Items
+ MarmiteDistillation = "Distillation Pot",
+ MarmiteDistillationFull = "Distillation Pot (Full)",
+ PotDistillation = "Prepared Pot",
+ PotDistillationCooked = "Raw Fuel",
+
+ -- Cooking
+ Distillee = "Distilled",
 }
