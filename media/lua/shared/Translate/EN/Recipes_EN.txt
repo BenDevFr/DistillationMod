@@ -1,0 +1,7 @@
+Tooltip_EN = {
+    -- Tooltips
+    Tooltip_MarmiteDistillation = "Special pot for fuel distillation. Infinitely reusable. Fill at the tap.",
+    Tooltip_MarmiteDistillationFull = "Distillation pot filled with water (25 units). Ready for preparation.",
+    Tooltip_PotDistillation = "Pot prepared for distillation. Requires 2 hours of cooking in a stove.",
+    Tooltip_PotDistillationCooked = "Raw artisanal fuel (30 units). Can be used directly for vehicles/generators. Right-click to transfer into containers.",
+}

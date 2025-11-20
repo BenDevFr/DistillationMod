@@ -1,0 +1,6 @@
+Recipe_FR = {
+    -- Recettes
+    Recipe_Assembler_Jerrycan_Fortune = "Assembler Jerrycan",
+    Recipe_Fabriquer_Marmite_Distillation = "Fabriquer Marmite de Distillation",
+    Recipe_Preparer_Distillation = "Préparer Distillation",
+}

@@ -1,0 +1,7 @@
+name=Distillation Artisanale
+poster=poster.png
+id=DistillationMod
+description=FR: Production d'essence artisanale. Craft de conteneurs, distillation, transfert universel compatible tous mods.
+description=EN: Artisanal fuel production. Craftable containers, distillation, universal transfer compatible with all mods.
+modversion=1.0
+versionmin=41.78
