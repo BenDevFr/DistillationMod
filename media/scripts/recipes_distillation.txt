@@ -5,24 +5,17 @@ module DistillationMod
  Base
  }
 
- /* ================================================
- RECETTE 1 : Craft Jerrycan Fortune
- Permet de créer des conteneurs à essence
- ================================================ */
  recipe AssemblerJerrycanFortune
  {
  PopBottleEmpty=15,
- DuctTape,
+ keep DuctTape,
  
  Result:Base.EmptyPetrolCan,
  Time:300.0,
  Category:Distillation,
+ OnCreate:DistillationMod_ConsumeDuctTape,
  }
 
- /* ================================================
- RECETTE 2 : Craft Marmite de Distillation
- Équipement réutilisable indéfiniment
- ================================================ */
  recipe FabriquerMarmiteDistillation
  {
  Pot,
@@ -36,16 +29,12 @@ module DistillationMod
  SkillRequired:MetalWelding=3,
  }
 
- /* ================================================
- RECETTE 3 : Préparer la Distillation
- Utilise la marmite PLEINE d'eau + 3 bûches
- ================================================ */
  recipe PreparerDistillation
  {
  destroy MarmiteDistillationFull,
  Log=3,
  
- Result:DistillationMod.PotDistillation,
+ Result:DistillationMod.MelangeDistillation,
  Time:200.0,
  Category:Distillation,
  OnTest:DistillationMod_CheckFullMarmite,

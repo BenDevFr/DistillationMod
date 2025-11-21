@@ -1,0 +1,151 @@
+VERSION = 1,
+
+option DistillationMod.FuelYieldUnits
+{
+    type = integer,
+    min = 10,
+    max = 1000,
+    default = 30,
+    page = DistillationMod,
+    translation = DistillationMod_FuelYieldUnits,
+}
+
+option DistillationMod.CookingTimeMinutes
+{
+    type = integer,
+    min = 30,
+    max = 480,
+    default = 120,
+    page = DistillationMod,
+    translation = DistillationMod_CookingTimeMinutes,
+}
+
+option DistillationMod.Separator1
+{
+    type = string,
+    default = "",
+    page = DistillationMod,
+    translation = DistillationMod_Separator1,
+}
+
+option DistillationMod.RequireWelding
+{
+    type = boolean,
+    default = true,
+    page = DistillationMod,
+    translation = DistillationMod_RequireWelding,
+}
+
+option DistillationMod.WeldingLevel
+{
+    type = integer,
+    min = 0,
+    max = 10,
+    default = 3,
+    page = DistillationMod,
+    translation = DistillationMod_WeldingLevel,
+}
+
+option DistillationMod.MetalPipeCount
+{
+    type = integer,
+    min = 1,
+    max = 10,
+    default = 2,
+    page = DistillationMod,
+    translation = DistillationMod_MetalPipeCount,
+}
+
+option DistillationMod.SheetMetalCount
+{
+    type = integer,
+    min = 1,
+    max = 10,
+    default = 1,
+    page = DistillationMod,
+    translation = DistillationMod_SheetMetalCount,
+}
+
+option DistillationMod.ScrewsCount
+{
+    type = integer,
+    min = 5,
+    max = 50,
+    default = 10,
+    page = DistillationMod,
+    translation = DistillationMod_ScrewsCount,
+}
+
+option DistillationMod.Separator2
+{
+    type = string,
+    default = "",
+    page = DistillationMod,
+    translation = DistillationMod_Separator2,
+}
+
+option DistillationMod.BottleCount
+{
+    type = integer,
+    min = 5,
+    max = 50,
+    default = 15,
+    page = DistillationMod,
+    translation = DistillationMod_BottleCount,
+}
+
+option DistillationMod.DuctTapeAmount
+{
+    type = double,
+    min = 0.1,
+    max = 2.0,
+    default = 0.5,
+    page = DistillationMod,
+    translation = DistillationMod_DuctTapeAmount,
+}
+
+option DistillationMod.Separator3
+{
+    type = string,
+    default = "",
+    page = DistillationMod,
+    translation = DistillationMod_Separator3,
+}
+
+option DistillationMod.WaterUnitsRequired
+{
+    type = integer,
+    min = 10,
+    max = 25,
+    default = 20,
+    page = DistillationMod,
+    translation = DistillationMod_WaterUnitsRequired,
+}
+
+option DistillationMod.LogCount
+{
+    type = integer,
+    min = 1,
+    max = 10,
+    default = 3,
+    page = DistillationMod,
+    translation = DistillationMod_LogCount,
+}
+
+option DistillationMod.Separator4
+{
+    type = string,
+    default = "",
+    page = DistillationMod,
+    translation = DistillationMod_Separator4,
+}
+
+option DistillationMod.TransferSpeedMultiplier
+{
+    type = double,
+    min = 0.5,
+    max = 3.0,
+    default = 1.0,
+    page = DistillationMod,
+    translation = DistillationMod_TransferSpeedMultiplier,
+}

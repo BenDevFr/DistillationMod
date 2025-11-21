@@ -1,7 +1,6 @@
 Tooltip_FR = {
- -- Tooltips Items
- Tooltip_MarmiteDistillation = "Marmite spéciale pour la distillation d'essence. Réutilisable indéfiniment. Remplir au robinet.",
- Tooltip_MarmiteDistillationFull = "Marmite de distillation remplie d'eau (25 unités). Prête pour la préparation.",
- Tooltip_PotDistillation = "Marmite préparée pour la distillation. écessite 2 heures de cuisson dans un poêle.",
- Tooltip_PotDistillationCooked = "Essence artisanale brute (30 unités). Utilisable directement pour véhicules et générateurs. Clic droit pour remplir des conteneurs.",
+    Tooltip_MarmiteDistillation = "Marmite speciale pour la distillation d'essence. Reutilisable indefiniment. Remplir au robinet.",
+    Tooltip_MarmiteDistillationFull = "Marmite de distillation remplie d'eau (25 unites). Prete pour la preparation.",
+    Tooltip_MelangeDistillation = "Melange d'eau et de bois pret a distiller. Necessite 2 heures de cuisson dans un poele.",
+    Tooltip_EssenceDistillee = "Essence artisanale distillee (30 unites par defaut). Utilisable directement pour vehicules et generateurs. Clic droit pour remplir des conteneurs.",
 }

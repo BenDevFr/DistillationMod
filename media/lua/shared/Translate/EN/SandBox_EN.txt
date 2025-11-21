@@ -1,0 +1,44 @@
+Sandbox_EN = {
+    Sandbox_DistillationMod = "Artisan Distillation",
+    
+    -- Production
+    Sandbox_DistillationMod_FuelYieldUnits = "Fuel yield units",
+    Sandbox_DistillationMod_FuelYieldUnits_tooltip = "Amount of fuel produced after distillation (10-1000 units)",
+    
+    Sandbox_DistillationMod_CookingTimeMinutes = "Cooking time (minutes)",
+    Sandbox_DistillationMod_CookingTimeMinutes_tooltip = "Cooking duration required for distillation (30-480 min)",
+    
+    -- Craft Pot
+    Sandbox_DistillationMod_RequireWelding = "Require welding skill",
+    Sandbox_DistillationMod_RequireWelding_tooltip = "Requires Welding skill to craft the distillation pot",
+    
+    Sandbox_DistillationMod_WeldingLevel = "Required welding level",
+    Sandbox_DistillationMod_WeldingLevel_tooltip = "Welding skill level required (0-10)",
+    
+    Sandbox_DistillationMod_MetalPipeCount = "Metal pipes required",
+    Sandbox_DistillationMod_MetalPipeCount_tooltip = "Number of metal pipes needed (1-10)",
+    
+    Sandbox_DistillationMod_SheetMetalCount = "Sheet metal required",
+    Sandbox_DistillationMod_SheetMetalCount_tooltip = "Number of sheet metal needed (1-10)",
+    
+    Sandbox_DistillationMod_ScrewsCount = "Screws required",
+    Sandbox_DistillationMod_ScrewsCount_tooltip = "Number of screws needed (5-50)",
+    
+    -- Craft Jerrycan
+    Sandbox_DistillationMod_BottleCount = "Bottles required",
+    Sandbox_DistillationMod_BottleCount_tooltip = "Number of empty bottles to assemble a jerrycan (5-50)",
+    
+    Sandbox_DistillationMod_RequireDuctTape = "Require duct tape",
+    Sandbox_DistillationMod_RequireDuctTape_tooltip = "Requires duct tape to assemble a jerrycan",
+    
+    -- Preparation
+    Sandbox_DistillationMod_WaterUnitsRequired = "Minimum water required",
+    Sandbox_DistillationMod_WaterUnitsRequired_tooltip = "Minimum water amount in the pot (10-25 units)",
+    
+    Sandbox_DistillationMod_LogCount = "Logs required",
+    Sandbox_DistillationMod_LogCount_tooltip = "Number of logs needed for preparation (1-10)",
+    
+    -- Transfer
+    Sandbox_DistillationMod_TransferSpeedMultiplier = "Transfer speed",
+    Sandbox_DistillationMod_TransferSpeedMultiplier_tooltip = "Speed multiplier for fuel transfer (0.5-3.0)",
+}

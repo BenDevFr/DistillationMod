@@ -1,0 +1,59 @@
+Sandbox_FR = {
+    Sandbox_DistillationMod = "Distillation Artisanale",
+    
+    -- ========================================
+    -- PRODUCTION D'ESSENCE
+    -- ========================================
+    
+    Sandbox_DistillationMod_FuelYieldUnits = "Unites d'essence produites",
+    Sandbox_DistillationMod_FuelYieldUnits_tooltip = "Quantite d'essence obtenue apres 2h de cuisson. Defaut: 30 unites (= 3 jerrycans de 10u). Min: 10, Max: 1000",
+    
+    Sandbox_DistillationMod_CookingTimeMinutes = "Temps de cuisson (minutes)",
+    Sandbox_DistillationMod_CookingTimeMinutes_tooltip = "Duree de cuisson dans un poele pour distiller l'essence. Defaut: 120 min (2h). Min: 30, Max: 480",
+    
+    -- Séparateur
+    Sandbox_DistillationMod_Separator1 = "--- CRAFT MARMITE DE DISTILLATION ---",
+    Sandbox_DistillationMod_Separator1_tooltip = "Equipement reutilisable pour produire de l'essence",
+    
+    Sandbox_DistillationMod_RequireWelding = "Necessiter competence Soudure",
+    Sandbox_DistillationMod_RequireWelding_tooltip = "Si active, requiert la competence Soudure pour fabriquer la marmite de distillation",
+    
+    Sandbox_DistillationMod_WeldingLevel = "Niveau Soudure requis",
+    Sandbox_DistillationMod_WeldingLevel_tooltip = "Niveau de competence Soudure necessaire. Defaut: 3. Min: 0 (aucun), Max: 10",
+    
+    Sandbox_DistillationMod_MetalPipeCount = "Tuyaux metal requis",
+    Sandbox_DistillationMod_MetalPipeCount_tooltip = "Nombre de tuyaux en metal pour fabriquer la marmite. Defaut: 2. Min: 1, Max: 10",
+    
+    Sandbox_DistillationMod_SheetMetalCount = "Toles requises",
+    Sandbox_DistillationMod_SheetMetalCount_tooltip = "Nombre de toles pour fabriquer la marmite. Defaut: 1. Min: 1, Max: 10",
+    
+    Sandbox_DistillationMod_ScrewsCount = "Vis requises",
+    Sandbox_DistillationMod_ScrewsCount_tooltip = "Nombre de vis pour fabriquer la marmite. Defaut: 10. Min: 5, Max: 50",
+    
+    -- Séparateur
+    Sandbox_DistillationMod_Separator2 = "--- CRAFT JERRYCAN DE FORTUNE ---",
+    Sandbox_DistillationMod_Separator2_tooltip = "Conteneur essence craftable avec des bouteilles",
+    
+    Sandbox_DistillationMod_BottleCount = "Bouteilles vides requises",
+    Sandbox_DistillationMod_BottleCount_tooltip = "Nombre de bouteilles de soda vides pour assembler un jerrycan. Defaut: 15. Min: 5, Max: 50",
+    
+    Sandbox_DistillationMod_DuctTapeAmount = "Duct Tape requis",
+    Sandbox_DistillationMod_DuctTapeAmount_tooltip = "Quantite de duct tape necessaire (en delta). Defaut: 0.5 (moitie d'un rouleau). Min: 0.1, Max: 2.0",
+    
+    -- Séparateur
+    Sandbox_DistillationMod_Separator3 = "--- PREPARATION DISTILLATION ---",
+    Sandbox_DistillationMod_Separator3_tooltip = "Ingredients pour preparer la marmite avant cuisson",
+    
+    Sandbox_DistillationMod_WaterUnitsRequired = "Eau minimum requise",
+    Sandbox_DistillationMod_WaterUnitsRequired_tooltip = "Quantite d'eau minimum dans la marmite pour pouvoir preparer la distillation. Defaut: 20 unites. Min: 10, Max: 25",
+    
+    Sandbox_DistillationMod_LogCount = "Buches requises",
+    Sandbox_DistillationMod_LogCount_tooltip = "Nombre de buches necessaires pour preparer la distillation. Defaut: 3. Min: 1, Max: 10",
+    
+    -- Séparateur
+    Sandbox_DistillationMod_Separator4 = "--- VITESSE DE TRANSFERT ---",
+    Sandbox_DistillationMod_Separator4_tooltip = "Temps pour transvaser l'essence dans des conteneurs",
+    
+    Sandbox_DistillationMod_TransferSpeedMultiplier = "Vitesse de transfert",
+    Sandbox_DistillationMod_TransferSpeedMultiplier_tooltip = "Multiplicateur de vitesse pour remplir les conteneurs. Defaut: 1.0 (normal). Min: 0.5 (lent), Max: 3.0 (rapide)",
+}

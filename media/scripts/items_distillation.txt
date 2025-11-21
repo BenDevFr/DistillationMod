@@ -57,16 +57,16 @@ module DistillationMod
  }
 
  /* ================================================
- PROCESS : Marmite préparée (avant cuisson)
- Nécessite 2h de cuisson dans un poêle
+ MÉLANGE À DISTILLER (avant cuisson)
+ Eau + bois + marmite spéciale = prêt à cuire
  ================================================ */
  
- item PotDistillation
+ item MelangeDistillation
  {
  DisplayCategory = Cooking,
  Weight = 2.0,
  Type = Food,
- DisplayName = PotDistillation,
+ DisplayName = MelangeDistillation,
  Icon = Pot,
  
  IsCookable = TRUE,
@@ -74,35 +74,34 @@ module DistillationMod
  MinutesToBurn = 180,
  
  CookedString = Distillee,
- ReplaceOnCooked = DistillationMod.PotDistillationCooked,
+ ReplaceOnCooked = DistillationMod.EssenceDistillee,
  
  DaysFresh = 0,
  DaysTotallyRotten = 0,
  Packaged = TRUE,
- Tooltip = Tooltip_PotDistillation,
+ Tooltip = Tooltip_MelangeDistillation,
  }
 
  /* ================================================
- ESSENCE BRUTE - Source transférable (30 unités)
- Utilisable directement ou à conditionner
+ ESSENCE DISTILLÉE - Prête à l'emploi
+ Produit fini de la distillation artisanale
  ================================================ */
  
- item PotDistillationCooked
+ item EssenceDistillee
  {
  DisplayCategory = Cooking,
  Weight = 2.5,
  Type = Drainable,
- DisplayName = PotDistillationCooked,
+ DisplayName = EssenceDistillee,
  Icon = Pot,
  
- UseDelta = 0.033333333,
+ UseDelta = 0.0333,
  UseWhileEquipped = FALSE,
  ReplaceOnDeplete = DistillationMod.MarmiteDistillation,
  CanStoreWater = FALSE,
  
  Tags = Petrol,
-
+ 
  Packaged = TRUE,
- Tooltip = Tooltip_PotDistillationCooked,
  }
 }
