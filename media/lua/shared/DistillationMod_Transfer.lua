@@ -261,7 +261,7 @@ end
 
 --- Crée le menu contextuel de transfert
 local function createTransferContextMenu(player, context, worldobjects, essenceBrute)
-    if essenceBrute:getFullType() ~= "DistillationMod.PotDistillationCooked" then
+    if essenceBrute:getFullType() ~= "DistillationMod.EssenceDistillee" then
         return
     end
 
@@ -339,7 +339,7 @@ local function onFillInventoryObjectContextMenu(player, context, items)
             item = item.items[1]
         end
 
-        if item and item:getFullType() == "DistillationMod.PotDistillationCooked" then
+        if item and item:getFullType() == "DistillationMod.EssenceDistillee" then
             essenceBrute = item
             break
         end
